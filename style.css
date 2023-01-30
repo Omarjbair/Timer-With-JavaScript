@@ -10,18 +10,20 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 100vh;
 }
-.container{
+
+.container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.container .cards{
+
+.container .cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,18 +32,18 @@ body{
     gap: 40px;
 }
 
-.container .cards > div{
+.container .cards>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.container .cards h2{
+.container .cards h2 {
     color: #6AB3FF;
 }
 
-.container .cards .time_box{
+.container .cards .time_box {
     border-radius: 8px;
     box-shadow: 0px 8px 25px 2px rgb(0 0 0 / 9%);
     width: 180px;
@@ -57,14 +59,15 @@ body{
     color: #6D6B78;
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 600px;
     margin-top: 100px;
 }
-.buttons button{
+
+.buttons button {
     transition: 0.3s;
     border-radius: 10px;
     outline: none;
@@ -82,31 +85,22 @@ body{
     -o-transition: 0.3s;
 }
 
-.buttons button:nth-child(2){
+.buttons button:nth-child(2) {
 
     background-color: #F34571;
     color: #fff;
 }
-.buttons button:nth-child(2):hover{
+
+.buttons button:nth-child(2):hover {
     background-color: #e02554;
 }
-.buttons button:hover:not(:nth-child(2)){
+
+.buttons button:hover:not(:nth-child(2)) {
     background-color: #6D6B78;
     color: #fff;
 }
-@media (max-width:767px) {
-    .buttons{
-        gap: 50px;
-        width: 350px;
-        margin-top: 50px;
-        padding-bottom: 50px;
-    }
-    .clock_button{
-        margin: 50px 0;
-    }
-}
 
-.clock_button{
+.clock_button {
     background-color: #F34571;
     color: #fff;
     margin: 100px 0;
@@ -121,5 +115,29 @@ body{
     line-height: 75px;
     font-size: 50px;
     cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
+
+.clock_button:hover {
+    background-color: #e02554;
+
+}
+
+@media (max-width:767px) {
+    .buttons {
+        gap: 50px;
+        width: 350px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .clock_button {
+        margin: 50px 0;
+    }
+}
+
 /*-------------------------------------------------------------*/
