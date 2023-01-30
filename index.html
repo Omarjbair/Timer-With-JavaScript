@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;800&family=Outfit:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="clock_button" id="clock_button" onclick="clock()" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+        <i id = "clock_icon" class="fa-regular fa-clock"></i>
+        <i class="fa-solid fa-timer"></i>
+    </div>
+    <div class="container">
+        <div class="cards" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+            <div>
+                <h2>Hours</h2>
+                <div class="time_box">
+                    <h1 id="hour">00</h1>
+                </div>
+            </div>
+            <div>
+                <h2>Minutes</h2>
+                <div class="time_box">
+                    <h1 id="minute">00</h1>
+                </div>
+            </div>
+            <div class="second_box">
+                <h2>Seconds</h2>
+                <div class="time_box">
+                    <h1 id="second">00</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons" id="timer_btns" data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+        <button onclick="pause()" class="pause_btn">Pause</button>
+        <button onclick="start()" class="start_btn">Start</button>
+        <button onclick="reset()" class="reset_btn">Reset</button>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>
