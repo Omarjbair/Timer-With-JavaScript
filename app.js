@@ -45,6 +45,8 @@ function pause() {
 }
 
 function reset() {
+    clearInterval(stop);
+    i = 1
     h = 0;
     m = 0;
     s = 0;
